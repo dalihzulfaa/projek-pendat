@@ -14,7 +14,7 @@ from sklearn.datasets import make_classification
 from sklearn.svm import SVC
 
 st.write(""" 
-# Cek data
+# Cek Project
 """)
 
 st.write("=========================================================================")
@@ -23,7 +23,7 @@ tab1, tab2, tab3, tab4 = st.tabs(["Import Data", "Preprocessing", "Modelling", "
 
 with tab1:
     st.write("Import Data")
-    data = pd.read_csv("https://raw.githubusercontent.com/Feb11F/dataset/main/credit_score.csv")
+    data = pd.read_csv("https://raw.githubusercontent.com/dalihzulfaa/Mechine-Learning/main/credit_score.csv")
     st.dataframe(data)
 
 with tab2:
