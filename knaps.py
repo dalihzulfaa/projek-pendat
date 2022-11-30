@@ -7,13 +7,13 @@ from sklearn.metrics import make_scorer, accuracy_score,precision_score
 warnings.filterwarnings('ignore', category=UserWarning, append=True)
 
 # data
-df = pd.read_csv("https://raw.githubusercontent.com/08-Ahlaqul-Karimah/machine-Learning/main/mushrooms.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/dalihzulfaa/Mechine-Learning/main/KOI2%20(2).csv")
 df.head()
 
 # normalisasi
 # data yang dipakai 2000 data
 # pemisahan class dan fitur
-df=df[:2000]
+
 from sklearn.preprocessing import OrdinalEncoder
 x = df.drop(df[['class']],axis=1)
 enc = OrdinalEncoder()
@@ -28,19 +28,19 @@ y = df['class'].values
 from sklearn.model_selection import train_test_split
 x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.2,random_state=1)
 
-st.set_page_config(page_title="Ima")
+st.set_page_config(page_title="Dalihzulfa")
 @st.cache()
 def progress():
     with st.spinner("Bentar ya....."):
         time.sleep(1)
         
-st.title("UAS PENDAT")
+st.title("Project")
 
 dataframe, preporcessing, modeling, implementation = st.tabs(
-    ["Jamur Data", "Prepocessing", "Modeling", "Implementation"])
+    ["Data", "Prepocessing", "Modeling", "Implementation"])
 
 with dataframe:
-    st.write('Data Jamur')
+    st.write('Data Koi')
     dataset,data= st.tabs(['Dataset',"data"])
     with dataset:
         st.dataframe(df)
@@ -53,7 +53,7 @@ with preporcessing:
 with modeling:
     # pisahkan fitur dan label
     knn,naivebayes,decisiontree= st.tabs(
-        ["K-Nearest Neighbor","naivebayes","decisiontree"])
+        ["K-NN","naivebayes","decisiontree"])
     with knn:
       from sklearn.neighbors import KNeighborsClassifier
       knn = KNeighborsClassifier(n_neighbors=3)
@@ -122,36 +122,22 @@ with modeling:
         data_predic
         
 with implementation:
-        df=df[:2000]
         from sklearn.preprocessing import OrdinalEncoder
         x = df.drop(df[['class']],axis=1)
         enc = OrdinalEncoder()
         a = enc.fit_transform(x)
         x=pd.DataFrame(a, columns=x.columns)
-        capshape=st.text_input('cap-shape: bell=b,conical=c,convex=x,flat=f, knobbed=k,sunken=s')
-        capsurface=st.text_input('cap-surface: fibrous=f,grooves=g,scaly=y,smooth=s')
-        capcolor=st.text_input('cap-color: brown=n,buff=b,cinnamon=c,gray=g,green=r,pink=p,purple=u,red=e,white=w,yellow=y')
-        bruises=st.text_input('bruises: bruises=t,no=f')
-        odor=st.text_input('odor: almond=a,anise=l,creosote=c,fishy=y,foul=f,musty=m,none=n,pungent=p,spicy=s')
-        gillattachment=st.text_input('gill-attachment: attached=a,descending=d,free=f,notched=n')
-        gillspacing=st.text_input('gill-spacing: close=c,crowded=w,distant=d')
-        gillsize=st.text_input('gill-size: broad=b,narrow=n')
-        gillcolor=st.text_input('gill-color: black=k,brown=n,buff=b,chocolate=h,gray=g, green=r,orange=o,pink=p,purple=u,red=e,white=w,yellow=y')
-        stalkshape=st.text_input('stalk-shape: enlarging=e,tapering=t')
-        stalkroot=st.text_input('stalk-root: bulbous=b,club=c,cup=u,equal=e,rhizomorphs=z,rooted=r,missing=?')
-        stalksurfaceabovering=st.text_input('stalk-surface-above-ring: fibrous=f,scaly=y,silky=k,smooth=s')
-        stalksurfacebelowring=st.text_input('stalk-surface-below-ring: fibrous=f,scaly=y,silky=k,smooth=s')
-        stalkcolorabovering=st.text_input('stalk-color-above-ring: brown=n,buff=b,cinnamon=c,gray=g,orange=o,pink=p,red=e,white=w,yellow=y')
-        stalkcolorbelowring=st.text_input('stalk-color-below-ring: brown=n,buff=b,cinnamon=c,gray=g,orange=o,pink=p,red=e,white=w,yellow=y')
-        veiltype=st.text_input('veil-type: partial=p,universal=u')
-        veilcolor=st.text_input('veil-color: brown=n,orange=o,white=w,yellow=y')
-        ringnumber=st.text_input('ring-number: none=n,one=o,two=t')
-        ringtype=st.text_input('ring-type: cobwebby=c,evanescent=e,flaring=f,large=l,none=n,pendant=p,sheathing=s,zone=z')
-        sporeprintcolor=st.text_input('spore-print-color: black=k,brown=n,buff=b,chocolate=h,green=r,orange=o,purple=u,white=w,yellow=y')
-        population=st.text_input('population: abundant=a,clustered=c,numerous=n,scattered=s,several=v,solitary=y')
-        habitat=st.text_input('habitat: grasses=g,leaves=l,meadows=m,paths=p,urban=u,waste=w,woods=d')
+        jenis_ikan=st.text_input('Jenis Ikan')
+        Ukuran=st.text_input('Ukuran')
+        Gender=st.text_input('Gender')
+        Umur=st.text_input('Umur')
+        Jumlah_Corak=st.text_input('Jumlah Corak')
+        CorakDominan=st.text_input('CorakDominan')
+        Spesifikasi=st.text_input('Spesifikasi')
+        Harga=st.text_input('Harga')
+        Tempat=st.text_input('Tempat')
 #x_new = ['x','y','y','t','l','f','c','b','g','e','c','s','s','w','w','p','w','o','p','k','s','m'] # hasil=0/e
-        x_new = [capshape,capsurface,capcolor,bruises,odor,gillattachment,gillspacing,gillsize,gillcolor,stalkshape,stalkroot,stalksurfaceabovering,stalksurfacebelowring,stalkcolorabovering,stalkcolorbelowring,veiltype,veilcolor,ringnumber,ringtype,sporeprintcolor,population,habitat] # hasil=1/p
+        x_new = [jenis_ikan,Ukuran,Gender,Umur,Jumlah_Corak,CorakDominan,Spesifikasi,Harga,Tempat] # hasil=1/p
         hinput=enc.transform(np.array([x_new]))
         hinput
         clf_pf = GaussianNB()
