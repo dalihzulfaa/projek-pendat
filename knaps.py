@@ -15,14 +15,14 @@ df.head()
 # pemisahan class dan fitur
 
 from sklearn.preprocessing import OrdinalEncoder
-x = df.drop(df[['class']],axis=1)
+x = df.drop(df[['Jenis_ikan']],axis=1)
 enc = OrdinalEncoder()
 a = enc.fit_transform(x)
 x=pd.DataFrame(a, columns=x.columns)
 
 # class
-y = df.loc[:, "class"]
-y = df['class'].values
+y = df.loc[:, "Jenis_ikan"]
+y = df['Jenis_ikan'].values
 
 # Split Data
 from sklearn.model_selection import train_test_split
@@ -127,7 +127,6 @@ with implementation:
         enc = OrdinalEncoder()
         a = enc.fit_transform(x)
         x=pd.DataFrame(a, columns=x.columns)
-        jenis_ikan=st.text_input('Jenis Ikan')
         Ukuran=st.text_input('Ukuran')
         Gender=st.text_input('Gender')
         Umur=st.text_input('Umur')
@@ -137,7 +136,7 @@ with implementation:
         Harga=st.text_input('Harga')
         Tempat=st.text_input('Tempat')
 #x_new = ['x','y','y','t','l','f','c','b','g','e','c','s','s','w','w','p','w','o','p','k','s','m'] # hasil=0/e
-        x_new = [jenis_ikan,Ukuran,Gender,Umur,Jumlah_Corak,CorakDominan,Spesifikasi,Harga,Tempat] # hasil=1/p
+        x_new = [Ukuran,Gender,Umur,Jumlah_Corak,CorakDominan,Spesifikasi,Harga,Tempat] # hasil=1/p
         hinput=enc.transform(np.array([x_new]))
         hinput
         clf_pf = GaussianNB()
