@@ -26,7 +26,6 @@ with data_set_description:
     st.write("###### Data Set Ini Adalah : Kualitas Anggur) ")
     st.write("###### Sumber Data Set dari Kaggle : https://www.kaggle.com/datasets/rajyellow46/wine-quality?resource=download")
     st.write("""###### Penjelasan setiap kolom : """)
-    st.write("""1. Species (Jenis ) :
     
    
     Output (keluaran) 
