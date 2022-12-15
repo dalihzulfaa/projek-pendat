@@ -29,7 +29,7 @@ with data_set_description:
     st.write("""1. Species (Jenis ) :
     
    
-    Output (keluaran)
+    Output (keluaran) 
     """)
     st.write("""Menggunakan Kolom (input) :
 
