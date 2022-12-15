@@ -28,9 +28,8 @@ with data_set_description:
     st.write("""###### Penjelasan setiap kolom : """)
     
    
-    Output (keluaran) 
-    """)
-    st.write("""Menggunakan Kolom (input) : """)
+ 
+    st.write("""Menggunakan Kolom (input) :
 
     precipitation
     tempmax * tempmin
