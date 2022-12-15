@@ -35,9 +35,11 @@ with data_set_description:
     tempmax * tempmin
     wind
     """)
-    st.write("""Kualitas Anggur   (output) :
+    st.write("""Mobile Price Classification   (output) :
     
-   
+    1. 0    : tidak
+    2. 1    : ya
+    
     """)
     st.write("###### Aplikasi ini untuk : Kualitas Anggur) ")
     st.write("###### Source Code Aplikasi ada di Github anda bisa acces di link : https://github.com/dalihzulfaa/projek-pendat ")
