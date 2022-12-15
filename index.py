@@ -35,10 +35,10 @@ with data_set_description:
     tempmax * tempmin
     wind
     """)
-    st.write("""Mobile Price Classification   (output) :
+    st.write("""Kualitas Anggur   (output) :
     
-    1. 0    : tidak
-    2. 1    : ya
+    1. merah
+    2. putih
     
     """)
     st.write("###### Aplikasi ini untuk : Kualitas Anggur) ")
