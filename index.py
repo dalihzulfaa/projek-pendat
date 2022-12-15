@@ -37,18 +37,11 @@ with data_set_description:
     tempmax * tempmin
     wind
     """)
-    st.write("""Mobile Price Classification   (output) :
+    st.write("""Kualitas Anggur   (output) :
     
-    1. Bream    : istilah umum bagi sejumlah spesies ikan air tawar dan ikan laut dari beragam genus yang meliputi: Abramis (misalnya A. brama, terkadang disebut bream air tawar).
-    2. Parkki   : 
-    3. Perch    : merupakan spesies ikan yang berwarna perak dengan semburat biru. Mereka memiliki mata hitam gelap yang khas dengan cincin luar berwarna kuning cerah.
-    4. Pike     : ikan dengan bentuk Mulut dan hidung berbentuk moncong dengan gigi terlihat mencolok banyak di rahang. Sirip kekuningan atau coklat kemerahan, punggung, dubur, dan ekor dengan bintik-bintik gelap menyebar. Biasanya ditemukan di air tawar meskipun baru-baru ditemukan hidup dalam air dengan kadar garam yang sedikit lebih rendah dari laut.
-    5. Roach    : merupakan ikan air tawar yang berasal dari perairan di wilayah Eropa dan Asia. Ikan jenis ini mampu hidup di perairan payau. Rutilus ritilus adalah jenis ikan omnivora yang tersebar luas di wilayah Eropa dan menjadi invasif di wilayah Irlandia dan Italia.
-    6. Smelt    : sejenis ikan kecil yang dipakai sebagai umpan.
-    7. Whitefish: adalah satu istilah perikanan yang merujuk kepada beberapa spesies ikan demersal dengan sirip, khususnya kod (Gadus morhua), whiting (Merluccius bilinearis), dan haddock (Melanogrammus aeglefinus).
-    
+   
     """)
-    st.write("###### Aplikasi ini untuk : Mobile Price Classification (Klasifikasi ikan di Pasar) ")
+    st.write("###### Aplikasi ini untuk : Kualitas Anggur) ")
     st.write("###### Source Code Aplikasi ada di Github anda bisa acces di link : https://github.com/dalihzulfaa/projek-pendat ")
 
 with upload_data:
