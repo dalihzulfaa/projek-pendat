@@ -37,8 +37,8 @@ with data_set_description:
     """)
     st.write("""Kualitas Anggur   (output) :
     
-    1. merah
-    2. putih
+    1. 0    : merah
+    2. 1    : putih
     
     """)
     st.write("###### Aplikasi ini untuk : Kualitas Anggur) ")
