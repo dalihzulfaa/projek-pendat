@@ -57,7 +57,7 @@ with upload_data:
     #     df = pd.read_csv(uploaded_file)
     #     st.write("Nama File Anda = ", uploaded_file.name)
     #     st.dataframe(df)
-    df = pd.read_csv('https://raw.githubusercontent.com/08-Ahlaqul-Karimah/machine-Learning/main/winequalityN.csv')
+    df = pd.read_csv('https://raw.githubusercontent.com/dalihzulfaa/Mechine-Learning/main/winequalityN.csv')
     st.dataframe(df)
 
 with preprocessing:
