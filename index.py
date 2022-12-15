@@ -28,31 +28,7 @@ with data_set_description:
     st.write("""###### Penjelasan setiap kolom : """)
     st.write("""1. Species (Jenis ) :
     
-    jenis :Spesies atau jenis adalah suatu peringkat taksonomi yang dipakai dalam klasifikasi biologis untuk merujuk pada satu atau beberapa kelompok individu makhluk hidup (populasi) yang serupa dan dapat saling membuahi satu sama lain di dalam kelompoknya (saling berbagi gen) sehingga menghasilkan keturunan yang fertil (subur).
-    ikan : Ikan adalah anggota vertebrata poikilotermik (berdarah dingin)[1] yang hidup di air dan bernapas dengan insang. Ikan merupakan kelompok vertebrata yang paling beraneka ragam dengan jumlah spesies lebih dari 27,000 di seluruh dunia. Secara taksonomi, ikan tergolong kelompok paraphyletic yang hubungan kekerabatannya masih diperdebatkan; biasanya ikan dibagi menjadi ikan tanpa rahang (kelas Agnatha, 75 spesies termasuk lamprey dan ikan hag), ikan bertulang rawan (kelas Chondrichthyes, 800 spesies termasuk hiu dan pari), dan sisanya tergolong ikan bertulang keras (kelas Osteichthyes).
-    """) 
-    st.write("""2. weight (Bobot) :
-
-    bobot : bobot yang di ada di dataset
-    """)
-    st.write("""3. length1 (Panjang1) :
-
-    panjang1 : panjang ikan yang ada  di dataset
-    """)
-    st.write("""4. length1 (Panjang2) :
-
-    panjang2 : panjang ikan yang ada  di dataset
-    """)
-    st.write("""5. length2 (Panjang3) :
-
-    panjang3 : panjang ikan yang ada  di dataset
-    """)
-    st.write("""6. height (Tinggi) :
-
-    tinggi : tinggi ikan yang ada di sataset
-    """)
-    st.write("""7. width (Lrbar) :
-
+   
     Output (keluaran)
     """)
     st.write("""Menggunakan Kolom (input) :
