@@ -30,7 +30,7 @@ with data_set_description:
    
     Output (keluaran) 
     """)
-    st.write("""Menggunakan Kolom (input) :
+    st.write("""Menggunakan Kolom (input) : """)
 
     precipitation
     tempmax * tempmin
